@@ -1,0 +1,16 @@
+"""
+config.example.py — Намуна. Ин файлро нусхабардорӣ карда, ба config.py
+номгузорӣ кунед ва қиматҳои воқеии худро гузоред.
+"""
+
+import os
+
+BOT_TOKEN = os.getenv("BOT_TOKEN", "PUT_YOUR_BOT_TOKEN_HERE")
+ADMIN_ID = int(os.getenv("ADMIN_ID", "0"))
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "PUT_YOUR_GROQ_API_KEY_HERE")
+GROQ_MODEL = "llama-3.3-70b-versatile"
+
+DB_PATH = "lang_bot.db"
+LESSONS_PER_MODULE = 7
+TOTAL_MONTHS = 6
+LANGUAGES = ["Англисӣ 🇬🇧", "Корейӣ 🇰🇷", "Русӣ 🇷🇺", "Чинӣ 🇨🇳", "Арабӣ 🇸🇦", "Туркӣ 🇹🇷"]
